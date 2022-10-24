@@ -1,0 +1,72 @@
+@import url("https://fonts.googleapis.com/css?family=Muli:400,400i,700,700i");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Muli", sans-serif;
+}
+
+.app {
+  background-color: rgb(42, 42, 42);
+  min-height: 100vh;
+}
+
+.app h1 {
+  color: white;
+  text-align: center;
+  margin: 50px;
+}
+
+.container {
+  padding: 50px 100px;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 50px;
+}
+
+.card {
+  background-color: white;
+  padding: 30px;
+  text-align: center;
+  width: 300px;
+  border-radius: 20px;
+  border: 2px solid rgb(225, 58, 58);
+  transition: 0.5s;
+}
+
+.card:hover {
+  border-radius: 0;
+  border: none;
+  background-color: rgb(225, 58, 58);
+  color: white;
+}
+
+.card img {
+  width: 150px;
+  height: 200px;
+  transition: 0.5s;
+}
+
+.card .title {
+  margin: 15px 0;
+}
+
+.card .text-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+.price {
+  background-color: rgb(225, 58, 58);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+.category {
+  font-size: 18px;
+}
